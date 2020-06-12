@@ -7,7 +7,52 @@
         <title>배달의 명수</title>
         <link rel="stylesheet" type="text/css" href="loading-style.css">
         <link href="http://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
-        </head>
+        <style>
+            body{
+    position: relative;
+    margin: 0; padding: 0;
+    vertical-align: top;
+}
+div.ani-wrapper {
+    position: relative;
+    width: 100%; height: 100vh;
+}
+div.food-img {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 80px;
+    animation: loadingAni 0.8s infinite;
+    -webkit-animation: loadingAni 0.8s infinite;
+    /* background: url(../05_food/food-01.png)no-repeat center center / auto 60px;
+    z-index: 100; */
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+ @keyframes loadingAni {
+    from{background: url(logo.png)no-repeat center center / 70px auto;}
+    14% {background: url(food-01.png)no-repeat center center / auto 50px;}
+    20% {background: url(food-02.png)no-repeat center center / auto 50px;}
+    40% {background: url(food-03.png)no-repeat center center / auto 50px;}
+    60% {background: url(food-04.png)no-repeat center center / auto 50px;}
+    70% {background: url(food-05.png)no-repeat center center / auto 50px;}
+    80% {background: url(food-06.png)no-repeat center center / auto 50px;}
+    90% {background: url(food-07.png)no-repeat center center / auto 50px;}
+    to {background: url(food-08.png)no-repeat center center / auto 50px;}
+} 
+
+.md-bg{
+    width: 100%; height: 100vh;
+    background: rgba(0,0,0,.5);
+    z-index: -100;
+}
+        </style>
+    </head>
 <body>
     <div class="ani-wrapper">
         <div class="food-img food01"></div>
