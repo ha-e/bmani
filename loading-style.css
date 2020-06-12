@@ -25,15 +25,15 @@ div.food-img {
     -o-transform: translate(-50%, -50%);
 }
  @keyframes loadingAni {
-    from{background: url(../05_food/logo.png)no-repeat center center / 70px auto;}
-    14% {background: url(../05_food/food-01.png)no-repeat center center / auto 50px;}
-    20% {background: url(../05_food/food-02.png)no-repeat center center / auto 50px;}
-    40% {background: url(../05_food/food-03.png)no-repeat center center / auto 50px;}
-    60% {background: url(../05_food/food-04.png)no-repeat center center / auto 50px;}
-    70% {background: url(../05_food/food-05.png)no-repeat center center / auto 50px;}
-    80% {background: url(../05_food/food-06.png)no-repeat center center / auto 50px;}
-    90% {background: url(../05_food/food-07.png)no-repeat center center / auto 50px;}
-    to {background: url(../05_food/food-08.png)no-repeat center center / auto 50px;}
+    from{background: url(logo.png)no-repeat center center / 70px auto;}
+    14% {background: url(food-01.png)no-repeat center center / auto 50px;}
+    20% {background: url(food-02.png)no-repeat center center / auto 50px;}
+    40% {background: url(food-03.png)no-repeat center center / auto 50px;}
+    60% {background: url(food-04.png)no-repeat center center / auto 50px;}
+    70% {background: url(food-05.png)no-repeat center center / auto 50px;}
+    80% {background: url(food-06.png)no-repeat center center / auto 50px;}
+    90% {background: url(food-07.png)no-repeat center center / auto 50px;}
+    to {background: url(food-08.png)no-repeat center center / auto 50px;}
 } 
 
 .md-bg{
