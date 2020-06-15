@@ -22,28 +22,27 @@ div.food-img {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100px;
+    width: 80px;
     height: 80px;
-    animation: loadingAni 0.8s infinite;
-    -webkit-animation: loadingAni 0.8s infinite;
-    /* background: url(../05_food/food-01.png)no-repeat center center / auto 60px;
-    z-index: 100; */
+    animation: loadingAni 2.5s steps(1,end) 1s infinite normal both;
+    -webkit-animation: loadingAni 2.5s steps(1,end) 1s infinite normal both;
+    animation-timing-function: steps(1,end);
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 }
- @keyframes loadingAni {
-    from{background: url(logo.png)no-repeat center center / 70px auto;}
-    14% {background: url(food-01.png)no-repeat center center / auto 50px;}
-    20% {background: url(food-02.png)no-repeat center center / auto 50px;}
-    40% {background: url(food-03.png)no-repeat center center / auto 50px;}
-    60% {background: url(food-04.png)no-repeat center center / auto 50px;}
-    70% {background: url(food-05.png)no-repeat center center / auto 50px;}
-    80% {background: url(food-06.png)no-repeat center center / auto 50px;}
-    90% {background: url(food-07.png)no-repeat center center / auto 50px;}
-    to {background: url(food-08.png)no-repeat center center / auto 50px;}
+@keyframes loadingAni {
+    from{ background: url(food-01.png)no-repeat center center / auto 40px; border-radius: 50% ; -webkit-border-radius: 50% ; -moz-border-radius: 50% ; -ms-border-radius: 50% ; -o-border-radius: 50% ; background-color: darkorange;}
+    14% {background: url(food-01.png)no-repeat center center / auto 40px; background-color: rgba(255,140,0,.5);}
+    20% {background: url(food-02.png)no-repeat center center / auto 40px; background-color: darkorange;}
+    40% {background: url(food-03.png)no-repeat center center / auto 40px; background-color: rgba(255,140,0,.5);}
+    60% {background: url(food-04.png)no-repeat center center / auto 40px; background-color: darkorange;}
+    70% {background: url(food-05.png)no-repeat center center / auto 40px; background-color: rgba(255,140,0,.5);}
+    80% {background: url(food-06.png)no-repeat center center / auto 40px; background-color: darkorange;}
+    90% {background: url(food-07.png)no-repeat center center / auto 40px; background-color: rgba(255,140,0,.5);}
+    to {background: url(food-08.png)no-repeat center center / auto 40px; background-color: rgba(255,140,0,.5);}
 } 
 
 .md-bg{
