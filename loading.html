@@ -24,9 +24,6 @@
                     left: 50%;
                     width: 80px;
                     height: 80px;
-                    /*animation: name duration timing-function delay iteration-count direction fill-mode;
-                    *//*animation: name duration timing-function delay iteration-count direction fill-mode play-state;
-                    */
                     animation: loadingAni 2.5s steps(1,end) 1s infinite normal both;
                     -webkit-animation: loadingAni 2.5s steps(1,end) 1s infinite normal both;
                     animation-timing-function: steps(1,end);
@@ -37,10 +34,10 @@
                     -o-transform: translate(-50%, -50%);
                 }
                  @keyframes loadingAni {
-                    from{ background: url(f01.png)no-repeat center center / auto 70px; }
+                    0% { background: url(f01.png)no-repeat center center / auto 70px; }
                     40% {background: url(f02.png)no-repeat center center / auto 70px; }
-                    80% {background: url(f03.png)no-repeat center center / auto 70px;}
-                    to {background: url(f04.png)no-repeat center center / auto 70px; }
+                    70% {background: url(f03.png)no-repeat center center / auto 70px;}
+                    100% {background: url(f04.png)no-repeat center center / auto 70px; }
                 } 
                         </style>
 
